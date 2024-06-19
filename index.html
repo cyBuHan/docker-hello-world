@@ -11,3 +11,210 @@ Hello World
                             \      \       _,'
                              `'--.._\..--''
 </pre>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 页面标题 -->
+<head>
+
+
+    <!-- 字符集格式 -->
+    <meta charset="UTF-8">
+
+    <!-- 设置浏览器兼容性 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>我的网页name</title>
+    
+    <!--通过style处理多个对象-->
+    <style>
+        body{
+            background-image: url(https://cn.bing.com/images/search?q=%E5%9B%BE%E7%89%87&FORM=IQFRBA&id=FBA838ACF064A76AC0058220B2B6BCB1CBBD5DE6);
+            background-attachment: scroll;
+        }
+        #div1{
+            width: 72%;
+            margin: 0 auto;
+        }
+
+    </style>
+
+</head>
+
+<!--页面主体-->
+<body>
+    <!-- 通过div实现盒子组合，即一堆相邻元素（可不同类别）共同放入一个整体中处理 -->
+    <div id="div1">
+
+         <!-- 
+            scr:路径 可以输入网站页面
+            width:宽度 单位 1.px  2.百分比，相对于父元素的百分比
+            height:高度  单位 1.px 2.百分比，相对于父元素的百分比
+        -->
+        <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.mH9YLFEL5YdVxJM82mjVJQAAAA?rs=1&pid=ImgDetMain" alt="" >示例图片
+    
+        <!-- 
+            h1为一级标题，最大的标题 
+            总共 h1->h6
+        -->
+        <hr>
+        <h1 style= "color:blue;">This is a first-head.</h1>
+        <hr>
+    
+        <!--
+            插入css代码，丰富样式 
+            1.行内样式，写在style属性中 如 <h1 style ="color:red;">  </h1>
+            2.内嵌样式，写在style标签中 如 <style> h1 {color : red;} </style>,一般用于对页面全部元素操作，比如左侧示例则是所有h1均为红色
+            3.外嵌样式，写在一个单独.css文件中，通过link标签引入
+         -->
+        <!-- 
+            color 赋值
+            1.RGB编码    如 color:rgb(0,0,0);
+            2.特定关键字  如  color:red;
+            3.十六进制编码 如 color:#000000;
+        -->
+        <!-- 无实际意义，用于划分元素进行不同修饰 -->
+        <h1 style="color: green;"><span style ="color: red";>这部分要红色    </span>这部分保持原本绿色</h1>
+
+        <!-- a 超链接 用于跳转 
+            href:跳转对象
+            target:如何打开对象，默认_self表示在当前页面打开，_blank在空白页面打开
+        -->
+        <a href="https://www.bilibili.com/v/anime/offical/#/" target=_blank>
+            <span style="color: green;text-decoration: none;" >前往</span>
+            <span style="color:red;">B站</span>
+        </a>
+
+        <!-- 视频标签 video
+            src:视频url;
+            controls:显示播放控件
+            width:播放器的宽度
+            height: 播放器的高度
+        -->
+        <!-- 音频标签 audio
+            src:视频url;
+            controls:显示播放控件
+        -->
+        <br>
+        <video src="https://www.bilibili.com/video/BV1Nm421G7Qd/?spm_id_from=333.1007.tianma.1-1-1.click" controls="True"></video>
+    
+        <!--段落标签  p  -->
+
+        <!-- 文本加粗 b  -->
+
+        <!-- 文本强调  strong -->
+        <hr>
+            <strong>this is a strong.</strong>
+        <hr>
+        <b>this is a 加粗.</b>
+        
+        <!-- table是一个表格 ，包裹多个tr, 一个tr就是一行，其中每行的表格单元格用 td表示，表头单元格可以用th -->
+        <table border="80%" cellspacing="0">
+            <tr>
+                <th style="color: red;">表头</th>
+            </tr>
+            <tr>
+                <td><img src="https://pic35.photophoto.cn/20150511/0034034892281415_b.jpg" width="50%" height="50%" ></td>
+                <td><video src="http://tv.people.com.cn/n1/2021/0915/c61600-32228190.html" controls="True"></td>
+            </tr>
+        </table>
+        <!-- form 表单
+            action: 表单提交的url,默认为本网页
+            method：表单提交的方式
+                get:在url后面拼接表单数据，比如: "url"?username=Jack&age=18，但由于url长度有限，所以很可能提交不全，默认为get
+                post:在消息体（请求体）中提交，参数无大小限制
+
+            表单内部有表单项组成
+            input：定义表单项，通过type属性控制输入形式(type="submit"时为提交按钮)，另外必须设置name
+            select:定义下拉列表，列表选项由option标签定义，option中实际提交结果由value确定
+            textarea:定义文本域
+        -->
+        <form method="post">
+            <input type="text" name="User_id">
+            <select name="age" id="bbb">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <input type="submit" value="提交">
+        </form>
+        <br>
+        <br>
+
+
+
+    </div>
+    
+    <!-- javascript引入方式
+    内部引入：直接在html文件中编写，<script>js代码</script>，一般将脚本置于body底部，可以提高显示速度
+    外部引入：单独编写js文件，通过<script scr="js文件路径"></scrip>引用
+    -->
+    <!-- javascript 输入语句
+    window.alert()警告框输出
+    document.write()html页面输出
+    console.log()写入浏览器控制台
+    -->
+
+    <!-- var声明变量，可以重复定义，且全局变量
+         let声明局部变量，不能重复定义
+         const声明常量
+     -->
+
+
+     <!-- 
+     == 不同类型数进行比较会暂时转换为相同类型比较，
+     === 数据类型不同直接返回false
+     字符串类型转换number时，会将转成前面存在的数字，如果不存在数字则为NAN，比如parseInt("123ab5")结果为123
+     其他类型转boolean：
+     Number:0和NaN为false,其他为true
+     String:空字符串为false,其他未true
+     Null和undefined:均转为false.
+     -->
+
+     <!-- 流程控制
+        if else
+        switch
+        for 
+        while
+        do ... while
+        ...基本与java一致
+     -->
+
+     <!-- 
+        函数定义
+        function 函数名(参数1,参数2...):{
+            函数内容
+        }
+        注意：javascript是一种弱类型语言，所以它不用声明参数类型和返回值类型
+        如果有返回值,return即可,如果没有返回值,可以不用写return
+        类似lambda函数，
+        var 名称=function(参数1，参数2...){
+            函数内容
+        }
+     -->
+
+    <!--
+        数组对象定义
+        1.var 名字 = new Array(元素列表)
+        2.var 名字 = [元素列表]
+        其作用类似python中列表，即长度可变且可以存不同类型元素
+        当存在未初始化部分时，对应位置为undefine
+        常用几种数组方法：
+        1.length属性,设置或返回数组长度
+        2.forEach()方法,遍历数组中每个有值元素，同时传给函数，forEach参数为函数
+        3.push()方法,将新元素添加到数组末尾，同时返回新的长度
+        4.splice()方法,从数组中删除元素
+    -->
+<script>
+        // window.alert("wow");
+        // var a=1;
+        // var b="1";
+        // window.alert(a==b);
+        // window.alert(typeof b+"how"+typeof a);
+        var a=[1,2,3,,4];
+        a.forEach(function(e){
+            window.alert(e);
+        })
+    </script>
+
+</body>
+</html>
