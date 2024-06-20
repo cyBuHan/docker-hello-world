@@ -15,6 +15,7 @@ Hello World
 <html lang="en">
 
 <!-- 页面标题 -->
+
 <head>
 
 
@@ -25,19 +26,19 @@ Hello World
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>我的网页name</title>
-    
+
     <!--通过style处理多个对象-->
     <style>
-        body{
+        body {
             /* background-attachment: scroll; */
             /* background-image: linear-gradient(red, yellow, blue);
             background-image: repeating-radial-gradient(red, yellow 10%, green 15%); */
             /* background-image: url(C:/图片/MiHoYo/老兵烧烤.gif); */
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            }
+        }
 
-            .hero-image {
+        .hero-image {
             background-image: url("C:/图片/壁纸库/zhuomian.png");
             background-color: #cccccc;
             height: 500px;
@@ -45,35 +46,121 @@ Hello World
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            }
+        }
 
-            .hero-text {
+        .hero-text {
             text-align: center;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
-            }
-        #div1{
+        }
+
+        #div1 {
             width: 72%;
             margin: 0 auto;
         }
-
     </style>
 
 </head>
 
 <!--页面主体-->
+
 <body>
-    <div class="hero-image">
-        <div class="hero-text">
-        <h1 style="font-size:50px">I am Bu Han</h1>
-        <h3 id="demo">And I'm a Undergraduate students from Chongqing University of Posts and Telecommunications</h3>
-        <button type="button" onclick="myFunction()">Join me</button>
+    <div class="container___hM5mM MuiBox-root css-1satmpw">
+        <div class="inputInner___ybWEr MuiBox-root css-1sutw63">
+            <div class="editor___KShcc editor___DSPKC">
+                <div role="textbox" aria-multiline="true" data-testid="msh-chatinput-editor" data-slate-editor="true"
+                    data-slate-node="value" contenteditable="true" zindex="-1"
+                    style="position: relative; white-space: pre-wrap; overflow-wrap: break-word; min-height: 20px;">
+                    <div data-slate-node="element"><span data-slate-node="text"><span data-slate-leaf="true"><span
+                                    data-slate-placeholder="true" contenteditable="false"
+                                    style="position: absolute; top: 0px; pointer-events: none; width: 100%; max-width: 100%; display: block; opacity: 0.333; user-select: none; text-decoration: none;">随时@你想要的Kimi+
+                                    使用各种能力</span><span data-slate-zero-width="n"
+                                    data-slate-length="0">﻿<br></span></span></span></div>
+                </div><doubao-ai-revision-highlighter style="z-index: 2;"></doubao-ai-revision-highlighter>
+            </div>
+            <div class="toolbar___WUSec MuiBox-root css-jf4p5b"><button
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium icon___zTPKp css-iarvcx"
+                    tabindex="0" type="button" aria-label="输入常用语标题，可快捷调用常用语"><span role="img"
+                        class="anticon MuiBox-root css-0"><svg width="1em" height="1em" fill="currentColor"
+                            aria-hidden="true" focusable="false" class="">
+                            <use xlink:href="#mshd-prompt-snippet"></use>
+                        </svg></span><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                <div class="MuiBox-root css-0" aria-label="已接入互联网，Kimi 会在需要时通过互联网搜集资料"><button
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-i0tiaf" tabindex="0"
+                        type="button" data-testid="msh-chatinput-net-button"><span role="img"
+                            class="anticon MuiBox-root css-1w5ifpo"><svg width="1em" height="1em" fill="currentColor"
+                                aria-hidden="true" focusable="false" class="">
+                                <use xlink:href="#mshd-with-net"></use>
+                            </svg></span><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
+                <div class="MuiBox-root css-0"><label
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium btn___tpdor css-i0tiaf"
+                        tabindex="0" role="button" data-testid="msh-chatinput-upload-button"><span role="img"
+                            class="anticon MuiBox-root css-0"><svg width="1em" height="1em" fill="currentColor"
+                                aria-hidden="true" focusable="false" class="">
+                                <use xlink:href="#mshd-file-upload"></use>
+                            </svg></span>
+                        <div class="MuiFormControl-root MuiTextField-root MuiFileInput-TextField css-1n1n3u1">
+                            <div
+                                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-ufjw5i">
+                                <div
+                                    class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1a6giau">
+                                    <span class="notranslate">​</span><svg
+                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="AttachFileIcon">
+                                        <path
+                                            d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6z">
+                                        </path>
+                                    </svg></div><label for=":r8:" class="css-1fel157"><input aria-invalid="false"
+                                        id=":r8:" type="file" multiple=""
+                                        accept="image/*, .md, .pdf, .txt, .csv, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-powerpoint, application/vnd.openxmlformats-officedocument.presentationml.presentation, .pdf, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .jpg, .jpeg, .png, .bmp, .gif, .webp, .py, .js, .java, .go, .c, .cpp, .html, .json, .py, .h, .py3, .css, .ts, .tsx, .yaml, .yml, .jsp, .php, .asp, .txt, .md, .mobi, .log, .cxx, .cc, .cs, .ini, .conf, .epub"
+                                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-137xkys"
+                                        value=""></label>
+                                <div class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1nvf7g0"
+                                    style="visibility: hidden;"><span
+                                        class="MuiTypography-root MuiTypography-caption MuiFileInput-Typography-size-text css-1a8yg0f"></span><button
+                                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiFileInput-IconButton css-737s7l"
+                                        tabindex="0" type="button" aria-label="Clear" title="Clear"><svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="CloseIcon">
+                                            <path
+                                                d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                            </path>
+                                        </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
+                                <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                                    <legend class="css-ihdtdm"><span class="notranslate">​</span></legend>
+                                </fieldset>
+                            </div>
+                        </div><span class="MuiTouchRipple-root css-w0pj6f"></span>
+                    </label></div>
+                <div class="MuiBox-root css-0" aria-label="请输入你的问题"><button
+                        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeMedium css-i0tiaf"
+                        tabindex="-1" type="button" disabled="" data-testid="msh-chatinput-send-button"
+                        id="send-button"><span role="img" class="anticon MuiBox-root css-0"><svg width="1em"
+                                height="1em" fill="currentColor" aria-hidden="true" focusable="false" class="">
+                                <use xlink:href="#mshd-send"></use>
+                            </svg></span></button></div>
+            </div>
         </div>
     </div>
-    
+
+
+
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">I am Bu Han</h1>
+            <h3 id="demo">And I'm a Undergraduate students from Chongqing University of Posts and Telecommunications
+            </h3>
+            <button type="button" onclick="myFunction()">Join me</button>
+            <br>
+            <button type="button" onclick="myFunction2()">Change the background-color</button>
+        </div>
+    </div>
+
     <p>Page content..</p>
     <p>Note that this technique will also make the image responsive: Resize the browser window to see the effect.</p>
     <!-- 通过div实现盒子组合，即一堆相邻元素（可不同类别）共同放入一个整体中处理 -->
@@ -84,16 +171,16 @@ Hello World
             width:宽度 单位 1.px  2.百分比，相对于父元素的百分比
             height:高度  单位 1.px 2.百分比，相对于父元素的百分比
         -->
-        <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.mH9YLFEL5YdVxJM82mjVJQAAAA?rs=1&pid=ImgDetMain" alt="" >示例图片
-    
+        <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.mH9YLFEL5YdVxJM82mjVJQAAAA?rs=1&pid=ImgDetMain" alt="">示例图片
+
         <!-- 
             h1为一级标题，最大的标题 
             总共 h1->h6
         -->
         <hr>
-        <h1 style= "color:blue;">This is a first-head.</h1>
+        <h1 id="demo2" style="color:blue;">This is a first-head.</h1>
         <hr>
-    
+
         <!--
             插入css代码，丰富样式 
             1.行内样式，写在style属性中 如 <h1 style ="color:red;">  </h1>
@@ -107,14 +194,14 @@ Hello World
             3.十六进制编码 如 color:#000000;
         -->
         <!-- 无实际意义，用于划分元素进行不同修饰 -->
-        <h1 style="color: green;"><span style ="color: red";>这部分要红色    </span>这部分保持原本绿色</h1>
+        <h1 style="color: green;"><span style="color: red" ;>这部分要红色 </span>这部分保持原本绿色</h1>
 
         <!-- a 超链接 用于跳转 
             href:跳转对象
             target:如何打开对象，默认_self表示在当前页面打开，_blank在空白页面打开
         -->
         <a href="https://www.bilibili.com/v/anime/offical/#/" target=_blank>
-            <span style="color: green;text-decoration: none;" >前往</span>
+            <span style="color: green;text-decoration: none;">前往</span>
             <span style="color:red;">B站</span>
         </a>
 
@@ -129,25 +216,27 @@ Hello World
             controls:显示播放控件
         -->
         <br>
-        <video src="https://www.bilibili.com/video/BV1Nm421G7Qd/?spm_id_from=333.1007.tianma.1-1-1.click" controls="True"></video>
-    
+        <video src="https://www.bilibili.com/video/BV1Nm421G7Qd/?spm_id_from=333.1007.tianma.1-1-1.click"
+            controls="True"></video>
+
         <!--段落标签  p  -->
 
         <!-- 文本加粗 b  -->
 
         <!-- 文本强调  strong -->
         <hr>
-            <strong>this is a strong.</strong>
+        <strong>this is a strong.</strong>
         <hr>
         <b>this is a 加粗.</b>
-        
+
         <!-- table是一个表格 ，包裹多个tr, 一个tr就是一行，其中每行的表格单元格用 td表示，表头单元格可以用th -->
         <table border="80%" cellspacing="0">
             <tr>
                 <th style="color: red;">表头</th>
             </tr>
             <tr>
-                <td><img src="https://pic35.photophoto.cn/20150511/0034034892281415_b.jpg" width="50%" height="50%" ></td>
+                <td><img src="https://pic35.photophoto.cn/20150511/0034034892281415_b.jpg" width="50%" height="50%">
+                </td>
                 <td><video src="http://tv.people.com.cn/n1/2021/0915/c61600-32228190.html" controls="True"></td>
             </tr>
         </table>
@@ -176,7 +265,7 @@ Hello World
 
 
     </div>
-    
+
     <!-- javascript引入方式
     内部引入：直接在html文件中编写，<script>js代码</script>，一般将脚本置于body底部，可以提高显示速度
     外部引入：单独编写js文件，通过<script scr="js文件路径"></scrip>引用
@@ -237,11 +326,7 @@ Hello World
         3.push()方法,将新元素添加到数组末尾，同时返回新的长度
         4.splice()方法,从数组中删除元素
     -->
-    <script>
-        function myFunction() {    
-            document.getElementById("demo").innerHTML = "Hello JavaScript!";
-        }
-    </script>
-
+    <script src="JScode/func.js"></script>
 </body>
+
 </html>
